@@ -1,0 +1,156 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+}
+
+
+/***************/
+/* PAGE LAYOUT */
+/***************/
+
+body {
+    max-width: 700px;
+    margin: auto; 
+}
+
+@media screen and (max-width: 735px) {
+    body {
+        width: 95%;
+    }
+    
+}
+
+
+/******************/
+/* BLOCK ELEMENTS */
+/******************/
+
+p {
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin-block-start: 1em;
+    margin-block-end: 0.8em;
+}
+
+h2 {
+    margin-block-start: 1em;
+    margin-block-end:  1rem;
+}
+
+h3 {
+    margin-block-start: 1.2em;
+    margin-block-end:  1rem;
+}
+
+blockquote {
+    border-left-style: solid;
+    border-left-width: 8px;
+    border-left-color: #F0F0F0;
+    margin-inline-start: 0;
+    padding-inline-start: 32px;
+}
+
+blockquote footer {
+    text-align: right;
+}
+
+blockquote footer::before {
+    content: "— ";
+}
+
+
+/*******************/
+/* INLINE ELEMENTS */
+/*******************/
+
+a {
+	text-decoration: none;
+	color:	#0A84FF;
+}
+
+a:hover {
+	background-size: cover;
+	background: #edf6ff;	
+	transition-property: background;
+	transition-duration: 0.2s;
+	border-radius: 4px;
+}
+
+sup {
+    font-size: 0.7em;
+}
+
+
+/**********/
+/* TABLES */
+/**********/
+
+table {
+    font-size: 0.9em;
+    width: 100%;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+table th {
+    text-align: left;
+    letter-spacing: .03em;
+    font-weight: normal;
+    font-size: small;
+    padding-bottom: 0.5rem;
+}
+
+table td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #FBF7F0;
+    
+}
+
+
+
+/**********/
+/* NAVBAR */
+/**********/
+
+header {
+	display: flex;
+	flex-wrap: nowrap;
+	border-bottom: 0.1em solid #F0F0F0;
+}
+
+header a {
+	display: block;
+	padding-top: 30px;
+    padding-bottom: 5px;
+	color: #333;
+	float: left;
+	width: 33.33%;
+	text-decoration: none;
+    color: #666666;
+}
+
+header a#left {
+	text-align: center;
+}
+
+header a#centre {
+	text-align: center;
+	border-left: 0.05em solid #F0F0F0;
+	border-right: 0.05em solid #F0F0F0;
+}
+
+header a#right {
+	text-align: center;
+}
