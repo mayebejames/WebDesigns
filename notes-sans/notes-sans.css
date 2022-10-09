@@ -1,7 +1,7 @@
 html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 18px;
-    color: #333
+  font-family: "Gill Sans","Gill Sans MT",Myriad Pro,Myriad,"Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif;;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 
@@ -9,13 +9,32 @@ html {
 /* PAGE LAYOUT */
 /***************/
 
+/* Layout: body > main > article */
+
 body {
+  background: #f8f8f8;
+}
+
+main {
     max-width: 950px;
-    margin: auto; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+  display: block;
+  background: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  
 }
 
 @media screen and (max-width: 735px) {
-    body {
+    main {
         width: 95%;
     }
     
@@ -28,7 +47,17 @@ body {
 
 p {
     line-height: 1.45;
-    margin-block-start: 0.5rem;
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+}
+
+p:firstchild {
+  margin-top: 0;
+}
+
+ul, ol {
+  margin-top: 1 em;
+  margin-bottom: 1em;
 }
 
 ul li, ol li{
@@ -36,20 +65,51 @@ ul li, ol li{
   margin-bottom: 0.3em;
 }
 
+ul li:last-child, ol li:last-child {
+  margin-bottom: 0;
+}
+
+li ul, li ol {
+  margin-bottom: 0;
+}
+
+figure {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-rigth: auto;
+  text-align: center;
+}
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 h1 {
-    margin-block-start: 1em;
-    margin-block-end: 0.8em;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(66, 66, 66);
+  margin-top: 1.3rem;
+  margin-bottom: 0.8rem;
+  
+}
+
+h1#title{
+    margin-block-start: 0;
+    margin-block-end: 1rem;
     font-weight: 600;
+    font-size: 39px;
+    font-variant-caps: small-caps;
+    color: rgb(66, 66, 66);
+
 }
 
 h2 {
-    margin-block-start: 1em;
-    margin-block-end:  0.7rem;
-    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom:  0.7rem;
+    font-weight: 700;
+    font-size: 1.1em;
+    /*color: rgb(66, 66, 66);*/
+    font-variant-caps: all-small-caps;
 }
 
 h3 {

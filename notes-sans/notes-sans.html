@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="responsive-sans.css">
-    <title>Responsive Sans</title>
+    <link rel="stylesheet" href="notes-sans.css">
+    <title>Notes Sans</title>
 </head>
 <body>
+    <main>
 
     <!-- Navbar HTML begins: -->
     <header>
@@ -20,26 +21,21 @@
 
     </header>
     <!-- Navbar HTML ends -->
+<article>
+    <h1 id ="title">Responsive sans</h1>
 
-    <h1>Responsive sans</h1>
-
-    <p>So far, I have sunk seven years into my attempt to understand medicine. Six in the libraries and lecture theatres and now one on the shop floor. To show for this I have a certificate to practice, a few polyester gowns, and several thousand pages of notes. Meticulous, exhaustive notes from the first year and half with laboriously hand drawn graphs. Scrawled scraps of essay plans from the terrible eighteen months that followed. In my first clinical year I used 80-page pocket notebooks in an attempt to glean whatever I could from the consultant's musings on the ward round; indecipherable 'nuggets' written while hurrying along corridors. In fifth year I moved to my laptop. The fragmented course was nothing compared to my chopping-and-changing with notetaking software: a year's output lost. For Finals I followed the sea of laptop screens in the tense and packed out lectures and used OneNote. It worked excellently, although now that I no longer have university access my hold over my notes is increasingly tenuous. Six years of learning and writing about everys facet of medicine from the ion channel to sarcoidosis and only a tiny fraction is accessible and usable. 
-    </p>
+  
     <p>
-    Since graduating, I've written everything in Markdown and spent whole days reading about Zettelkasten and Evergreen Notes. I've designed websites to house my notes and created a simple static site builder. I've written tiny, atomized notes each outlining a new concept or idea that I'd had and I've written exhaustive summaries of important conditions. My notes are now portable and can be accessed from a hospital PC but remain neither usable nor useful. I've spent too much time on metadata and theory; going from a quick note to something usable is too cumbersome, so polishing immediately fell behind naive note creation. A distinct, concerted effort to make my notes more than the sum of their parts and I again am presented with a jumble of tidbits in a heap. 
-    </p>
-
-    <p>
-    Compared to the serif, fusty designs that have preceded it, this is a blinding blank slate. I'm always surprised that there's no obvious template for a simple, half-decently responsive web page which doesn't require a bloated framework or npm or an obnoxious html design. For myself at least, this will be that template. No opinionated nest of divs around the main body. Atomized navigation bars and any other additional features which can be  easily and obviously removed or reused. This will likely remain a (slightly more than) minimum viable product rather than a polished and perfected template for publishing on Hacker News; I've spent enough time already polishing 'tools' when I should have been doing real work. 
+        This is a new design that is tha basis for the notes pages on my website. I wanted something sans serif which works well with frequent lists and headers for the quicker, short-form notes that are often very useful for describing information-dense topics in medicine. This is meant to be an alternative to, not replace, the serif book-style designs used for long-form articles.  
     </p>
 
     <p>
-        Here's to the real work. It's worth doing well. 
-    </p>
+        The design is heavily influenced by the Concepts pages on LessWrong, particularly their page on <a href="https://www.lesswrong.com/tag/bayes-theorem">Bayes' Theorem</a>. Gill Sans has been my go-to sans font on the site for e.g. tables, so using it further here works well. There are three levels of header: h1 with a title id, h1 for first level headers, and h2 for subsections. The fourth level header from responsive sans has been retained for now, in case it is useful in the future. </p>
 
-    <p>Bury St. Edmunds, September 2021. </p>
 
-    <h2>Element examples: second level header</h2>
+    <p>Bury St. Edmunds, October 2022. </p>
+
+    <h1>Element examples: first level header</h1>
 
     <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Fusce ultricies felis ut odio vestibulum, quis ultricies odio accumsan. Sed mattis facilisis leo. Sed mollis ullamcorper lorem, <i>quis finibus arcu tincidunt in.</i> Proin ultrices, <a href="">est eget fermentum pretium</a>, enim massa cursus orci<sup>1</sup>, lacinia imperdiet nibh nibh a quam. Nunc id augue at enim feugiat commodo. Duis quis velit neque. Etiam convallis<sup>2</sup> nunc eu sem eleifend, eu efficitur arcu ullamcorper. Nam fermentum odio et pretium efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut mauris feugiat, rutrum ligula at, dignissim purus. Aliquam bibendum ipsum at volutpat vestibulum. Donec sed semper arcu. Maecenas a nisi at libero cursus convallis. Etiam maximus urna pharetra risus facilisis, id gravida odio molestie. Praesent at ex ante. In facilisis sodales augue sed pulvinar.
     </p>
@@ -59,17 +55,15 @@
 
    
 
-    <p>
+    <figure>
     <img src="durer-rhino.png" alt="Dürer's rhinoceros.">
-    Albrecht Dürer's <i>Rhinoceros</i>. Woodcut, 1515.
-    </p>
-
-    <h3> Third level header</h3>
+    <figcaption>Albrecht Dürer's <i>Rhinoceros</i>. Woodcut, 1515. (Using the figcaption element.)</figcaption>
+    </figure>
 
     <p> Maecenas tincidunt ligula eu rutrum fringilla. Pellentesque quis justo vitae tellus venenatis posuere. Duis malesuada fermentum pharetra. Nullam a rutrum quam, nec fermentum ligula. Curabitur commodo facilisis nulla, ut feugiat elit elementum id. Nulla scelerisque turpis vel erat pharetra molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam nibh est, posuere sit amet ultrices dignissim, malesuada ac mauris. Praesent imperdiet risus eros, in ultricies nisl auctor non. Ut quis enim mi.
     </p>
 
-
+    <h2> Second level header</h2>
 
     <blockquote>
         <p>Four score and seven years ago our fathers brought forth upon this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</p>
@@ -110,5 +104,7 @@
 
     <p>Aliquam faucibus tortor in metus bibendum iaculis. Curabitur feugiat risus vitae sapien ultricies, sit amet tincidunt odio tincidunt. Sed ornare hendrerit bibendum. Morbi vel venenatis nisi. Sed elementum aliquam nisi. Suspendisse ac scelerisque leo. Cras et sem eget augue rutrum feugiat. Praesent faucibus urna non felis laoreet rhoncus a at purus. Donec molestie congue vehicula. Ut consequat nibh et elit porttitor, ut dictum lacus gravida. Aenean finibus lobortis ipsum, vel consequat tellus egestas sit amet. Integer sodales sapien tincidunt porttitor condimentum. Cras ut nunc ligula.</p>
 
+    </article>
+    </main>
 </body>
 </html>
